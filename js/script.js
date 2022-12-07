@@ -8,17 +8,25 @@ document.querySelectorAll('.service-item')
     }));
 
 const serviceButEl = document.querySelector('.service__button');
+
 serviceButEl.addEventListener('mouseover', (e) => {
   serviceButEl.classList.add('animate_btn');
   serviceButEl.style.visibility = 'visible';
   serviceButEl.addEventListener('touchstart', (e) => {
+    console.log('touchstart');
     serviceButEl.classList.add('animate_btn');
     serviceButEl.style.visibility = 'visible';
   });
 });
+
 serviceButEl.addEventListener('mouseout', (e) => {
   serviceButEl.classList.remove('animate_btn');
   serviceButEl.style.visibility = '!visible';
+  serviceButEl.addEventListener('touchend', (e) => {
+    console.log('Touchend');
+    serviceButEl.classList.add('animate_btn');
+    serviceButEl.style.visibility = '!visible';
+  });
 });
 
 
