@@ -11,6 +11,10 @@ const serviceButEl = document.querySelector('.service__button');
 serviceButEl.addEventListener('mouseover', (e) => {
   serviceButEl.classList.add('animate_btn');
   serviceButEl.style.visibility = 'visible';
+  serviceButEl.addEventListener('touchstart', (e) => {
+    serviceButEl.classList.add('animate_btn');
+    serviceButEl.style.visibility = 'visible';
+  });
 });
 serviceButEl.addEventListener('mouseout', (e) => {
   serviceButEl.classList.remove('animate_btn');
