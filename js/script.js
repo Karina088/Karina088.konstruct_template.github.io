@@ -10,41 +10,16 @@ document.querySelectorAll('.service-item')
 
 const serviceButEl = document.querySelector('.service__button');
 
-// serviceButEl.addEventListener('click', event => {
-//   return serviceButEl.classList.toggle('animate_btn');
+// serviceButEl.addEventListener('click', () => {
+//   serviceButEl.classList.toggle('animate_btn');
 // });
 
-serviceButEl.addEventListener('touchmove', event => {
-  if (event.target.tagName !== 'BUTTON') {
-    return serviceButEl.classList.remove('animate_btn');
-  } else {
-    return serviceButEl.classList.add('animate_btn');
-  }
+serviceButEl.addEventListener('touchstart', (e) => {
+  serviceButEl.classList.add('animate_btn');
 });
-  // if (event.target.tagName !== 'BUTTON') {
-  //   return btnEl.style.visibility = 'hidden';
-  // } else {
-  //   return btnEl.style.visibility = 'visible';
-  // }
+serviceButEl.addEventListener('touchend', (e) => {
+  serviceButEl.classList.remove('animate_btn');
+});
 
-
-// const serviceButEl = document.querySelector('.service__button');
-// serviceButEl.addEventListener('mouseover', (e) => {
-//   serviceButEl.classList.add('animate_btn');
-//   serviceButEl.style.visibility = 'visible';
-//   serviceButEl.addEventListener('touchstart', (e) => {
-//     serviceButEl.classList.add('animate_btn');
-//     serviceButEl.style.visibility = 'visible';
-//   });
-// });
-
-// serviceButEl.addEventListener('mouseout', (e) => {
-//   serviceButEl.classList.remove('animate_btn');
-//   serviceButEl.style.visibility = '!visible';
-//   serviceButEl.addEventListener('touchend', (e) => {
-//     serviceButEl.classList.add('animate_btn');
-//     serviceButEl.style.visibility = '!visible';
-//   });
-// });
 
 
