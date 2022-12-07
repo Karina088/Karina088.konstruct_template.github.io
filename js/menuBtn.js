@@ -8,3 +8,7 @@ menuBtn.addEventListener('click', () => {
     menuBtn.classList.toggle('active');
     menuList.classList.toggle('active');
 });
+
+document.querySelectorAll('a')
+    .forEach(el => el.addEventListener('click',
+        (event) => event.preventDefault()));
