@@ -39,28 +39,28 @@
         <p class="header__par">SCROLL DOWN</p>
     </header>
 
-    <div class="menu">
-        <div class="menu-box container">
-            <p class="menu__logo">KONSTRU<img class="logo-img" src="img/triangle.png" alt="triangle photo">T</p>
-            <div class="menu-btn">
-                <span></span>
-                <span></span>
-                <span></span>
+    <main>
+        <div class="menu">
+            <div class="menu-box container">
+                <p class="menu__logo">KONSTRU<img class="logo-img" src="img/triangle.png" alt="triangle photo">T</p>
+                <div class="menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <nav class="menu__list">
+                    <ul>
+                        <li><a class="menu__link" href="#">HOME</a></li>
+                        <li><a class="menu__link" href="#">ABOUT</a></li>
+                        <li><a class="menu__link" href="#">SERVICES</a></li>
+                        <li><a class="menu__link" href="#">WORK</a></li>
+                        <li><a class="menu__link" href="#">CONTACT</a></li>
+                    </ul>
+                </nav>
             </div>
-            <nav class="menu__list">
-                <ul>
-                    <li><a class="menu__link" href="#">HOME</a></li>
-                    <li><a class="menu__link" href="#">ABOUT</a></li>
-                    <li><a class="menu__link" href="#">SERVICES</a></li>
-                    <li><a class="menu__link" href="#">WORK</a></li>
-                    <li><a class="menu__link" href="#">CONTACT</a></li>
-                </ul>
-            </nav>
+
         </div>
 
-    </div>
-
-    <main>
         <div class="story container">
             <h3 class="story__header">OUR STORY</h3>
             <hr class="line">
@@ -136,20 +136,21 @@
             </div>
 
         </div>
+
+
+        <div class="get-in-touch">
+            <h3 class="get-in-touch__header">Want to build something amazing?</h3>
+            <button class="get-in-touch__button">GET IN TOUCH</button>
+        </div>
+
+        <div class="newsletter">
+            <h5 class="newsletter__header">Newsletter Signup</h5>
+            <form action="#" method="post">
+                <input type="email" name="email" placeholder="test@youremail.com">
+                <button type="submit">SIGNUP</button>
+            </form>
+        </div>
     </main>
-
-    <div class="get-in-touch">
-        <h3 class="get-in-touch__header">Want to build something amazing?</h3>
-        <button class="get-in-touch__button">GET IN TOUCH</button>
-    </div>
-
-    <div class="newsletter">
-        <h5 class="newsletter__header">Newsletter Signup</h5>
-        <form action="#" method="post">
-            <input type="email" name="email" placeholder="test@youremail.com">
-            <button type="submit">SIGNUP</button>
-        </form>
-    </div>
 
     <footer>
         <div class="footer container">
@@ -204,6 +205,12 @@
             <p>&copy;&nbsp;2017 Konstruct Inc. Designed by&nbsp;Jane Kathryn Teo</p>
         </div>
     </footer>
+
+    <script>
+        const bodyEl = document.querySelector('.main');
+        console.log(bodyEl);
+        bodyEl.style.paddingRight = bodyEl.offsetWidth - bodyEl.clientWidth + "px";
+    </script>
 
     <script src="js/script.js"></script>
     <script src="js/validator.js"></script>
