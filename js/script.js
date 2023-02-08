@@ -10,16 +10,17 @@ document.querySelectorAll('.service-item')
 
 const serviceButEl = document.querySelector('.service__button');
 
-// serviceButEl.addEventListener('click', () => {
-//   serviceButEl.classList.toggle('animate_btn');
-// });
+serviceButEl.addEventListener('click', () => {
+  serviceButEl.classList.toggle('animate_btn');
+});
 
-serviceButEl.addEventListener('touchstart', (e) => {
+/*
+serviceButEl.addEventListener('touchstart', () => {
   serviceButEl.classList.add('animate_btn');
 });
-serviceButEl.addEventListener('touchend', (e) => {
+serviceButEl.addEventListener('touchend', () => {
   serviceButEl.classList.remove('animate_btn');
-});
+});*/
 
 
 
